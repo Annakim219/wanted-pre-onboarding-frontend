@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import { StyledWrapper } from "../../App";
 import {
-  StyledFormWrapper,
   StyledForm,
   StyledFormInput,
   StyledFormBtn,
@@ -30,7 +30,7 @@ const SignUp = () => {
 
   const CheckEmail = (e) => {
     const EMAIL_REGEX =
-      /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+      /^([0-9a-zA-Z_.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
     if (!EMAIL_REGEX.test(email)) {
       setEmailErrMsg("이메일 형식으로 입력해주세요");
       setValidEmail(false);
@@ -91,7 +91,7 @@ const SignUp = () => {
 
   return (
     <>
-      <StyledFormWrapper>
+      <StyledWrapper>
         <StyledForm maxWidth={"500px"} onSubmit={handleSubmit}>
           <h1>회원가입</h1>
           <StyledFormError>
@@ -141,12 +141,13 @@ const SignUp = () => {
             <p>{!validMatch ? matchErrMsg : ""}</p>
           </StyledFormError>
           <StyledFormBtn
+            bgColor={"#6a82fb"}
             disabled={!(validEmail && validPwd && validMatch) ? true : false}
           >
             가입하기
           </StyledFormBtn>
         </StyledForm>
-      </StyledFormWrapper>
+      </StyledWrapper>
     </>
   );
 };

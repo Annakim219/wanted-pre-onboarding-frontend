@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
-import Todo from "./pages/Todo/Todo";
+import Todos from "./pages/Todos/Todos";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/todo" element={<Todo />} />
+          <Route path="/todos" element={<Todos />} />
         </Routes>
       </Router>
     </>
@@ -33,3 +33,11 @@ const GlobalStyle = createGlobalStyle`
     color: #555;
   }
   `;
+
+export const StyledWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+`;

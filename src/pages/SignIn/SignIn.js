@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router";
+import { StyledWrapper } from "../../App";
 import {
-  StyledFormWrapper,
   StyledForm,
   StyledFormInput,
   StyledFormBtn,
@@ -60,7 +60,7 @@ const SignIn = () => {
   };
 
   return (
-    <StyledFormWrapper>
+    <StyledWrapper>
       <StyledForm maxWidth={"400px"} onSubmit={handleSubmit}>
         <h1>로그인</h1>
         <label htmlFor="email">이메일</label>
@@ -85,13 +85,13 @@ const SignIn = () => {
         <StyledFormError>
           <p ref={errRef}>{errMsg}</p>
         </StyledFormError>
-        <StyledFormBtn>로그인</StyledFormBtn>
+        <StyledFormBtn bgColor={"#6a82fb"}>로그인</StyledFormBtn>
         <StyledFormTBtn onClick={() => navigate("/signup")}>
           <BsFillPersonFill id="personIcon" />
           회원가입
         </StyledFormTBtn>
       </StyledForm>
-    </StyledFormWrapper>
+    </StyledWrapper>
   );
 };
 

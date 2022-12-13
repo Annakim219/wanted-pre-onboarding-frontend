@@ -10,14 +10,6 @@ const sharedStyled = css`
   box-sizing: border-box;
 `;
 
-export const StyledFormWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 0 20px;
-`;
-
 export const StyledForm = styled.form`
   width: 100%;
   max-width: ${({ maxWidth }) => maxWidth};
@@ -36,7 +28,7 @@ export const StyledFormInput = styled.input`
 
 export const StyledFormBtn = styled.button`
   display: block;
-  background-color: #6a82fb;
+  background-color: ${({ bgColor }) => bgColor};
   color: #fff;
   font-size: 1rem;
   border: 0;
@@ -68,8 +60,8 @@ export const StyledFormTBtn = styled.button`
 
   #personIcon {
     position: relative;
-    top: 2px;
-    right: 2px;
+    top: 3px;
+    right: 3px;
   }
 `;
 
