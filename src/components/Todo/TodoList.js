@@ -13,10 +13,12 @@ const TODOS_URL = "/todos";
 const TodoList = () => {
   const navigate = useNavigate();
   const { todos, setTodos, newTodo } = useContext(TodosContext);
+
   const logout = () => {
     localStorage.removeItem("Authorization");
     navigate("/");
   };
+
   const getTodos = async () => {
     try {
       const response = await axios.get(TODOS_URL, {
@@ -64,7 +66,6 @@ export default TodoList;
 const TodoListBlock = styled.div`
   width: 100%;
   height: 90%;
-  padding: 10px;
   display: flex;
   flex-direction: column;
 

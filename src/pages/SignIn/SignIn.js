@@ -30,6 +30,12 @@ const SignIn = () => {
     setErrMsg("");
   }, [email, pwd]);
 
+  useEffect(() => {
+    if (localStorage.getItem("Authorization")) {
+      navigate("/todo");
+    }
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

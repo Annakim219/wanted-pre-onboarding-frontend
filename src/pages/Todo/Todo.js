@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TodosContext } from "../../context/TodosContext";
 import { StyledWrapper } from "../../App";
 import LoginErr from "../../components/LoginErr";
-import TodoList from "./TodoList";
+import TodoList from "../../components/Todo/TodoList";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Todo = ({ children }) => {
+  const navigate = useNavigate();
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
+
+  useEffect(() => {
+    if (!localStorage.getItem("Authorization")) {
+      navigate("/");
+    }
+  }, []);
 
   return (
     <TodosContext.Provider value={{ todos, setTodos, newTodo, setNewTodo }}>

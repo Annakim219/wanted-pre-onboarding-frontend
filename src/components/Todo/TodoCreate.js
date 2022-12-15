@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { TodosContext } from "../../context/TodosContext";
 import axios from "../../api/axios";
-import { StyledFormInput } from "../../components/Form.style";
+import { StyledFormInput } from "../Form.style";
 import styled from "styled-components";
 
 const TODOS_URL = "/todos";
