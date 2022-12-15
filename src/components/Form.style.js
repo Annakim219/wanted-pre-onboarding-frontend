@@ -53,15 +53,19 @@ export const StyledFormTBtn = styled.button`
   font-size: 0.9rem;
   border: 0;
   color: #555;
-  text-align: center;
   margin: 5px auto;
+  margin-left: ${({ marginLeft }) => marginLeft};
   cursor: pointer;
   box-sizing: border-box;
 
-  #personIcon {
+  .wIcon {
     position: relative;
-    top: 3px;
-    right: 3px;
+    top: 2px;
+    right: 2px;
+  }
+
+  &:hover {
+    color: #999;
   }
 `;
 

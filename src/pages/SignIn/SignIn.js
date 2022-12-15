@@ -1,5 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router";
+import axios from "../../api/axios";
 import { StyledWrapper } from "../../App";
 import {
   StyledForm,
@@ -9,7 +10,6 @@ import {
   StyledFormError,
 } from "../../components/Form.style";
 import { BsFillPersonFill } from "react-icons/bs";
-import axios from "../../api/axios";
 
 const SIGNIN_URL = "/auth/signin";
 
@@ -45,7 +45,7 @@ const SignIn = () => {
       localStorage.setItem("Authorization", `Bearer ${accessToken}`);
       setEmail("");
       setPwd("");
-      alert("로그인에 성공하였습니다 !");
+      navigate("/todo");
     } catch (err) {
       if (err.response.status === 404) {
         setErrMsg(err.response.data.message);
@@ -87,7 +87,7 @@ const SignIn = () => {
         </StyledFormError>
         <StyledFormBtn bgColor={"#6a82fb"}>로그인</StyledFormBtn>
         <StyledFormTBtn onClick={() => navigate("/signup")}>
-          <BsFillPersonFill id="personIcon" />
+          <BsFillPersonFill className="wIcon" />
           회원가입
         </StyledFormTBtn>
       </StyledForm>

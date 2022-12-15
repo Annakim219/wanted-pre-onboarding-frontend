@@ -1,8 +1,9 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import styled, { createGlobalStyle } from "styled-components";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
-import Todos from "./pages/Todos/Todos";
+import Todo from "./pages/Todo/Todo";
+import styled, { createGlobalStyle } from "styled-components";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/todos" element={<Todos />} />
+          <Route path="/todo" element={<Todo />} />
         </Routes>
       </Router>
     </>

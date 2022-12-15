@@ -1,4 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "../../api/axios";
 import { StyledWrapper } from "../../App";
 import {
   StyledForm,
@@ -6,11 +8,11 @@ import {
   StyledFormBtn,
   StyledFormError,
 } from "../../components/Form.style";
-import axios from "../../api/axios";
 
 const SIGNUP_URL = "/auth/signup";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const emailRef = useRef();
   const errRef = useRef();
 
@@ -82,6 +84,7 @@ const SignUp = () => {
       setEmail("");
       setPwd("");
       alert("회원가입에 성공하였습니다 !");
+      navigate("/todo");
     } catch (err) {
       console.log(err.response);
       setErrMsg(err.response.data.message);
