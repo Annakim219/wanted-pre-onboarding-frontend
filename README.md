@@ -4,8 +4,7 @@
 (https://github.com/walking-sunset/selection-task)
 
 
-## 배포 링크
-## ⭐️ https://serene-clafoutis-081fdc.netlify.app/
+## ⭐️ 배포 링크 :  https://serene-clafoutis-081fdc.netlify.app/
 
 
 
