@@ -1,6 +1,4 @@
-# wanted-pre-onboarding-frontend
-
-원티드 프리온보딩 프론트엔드 과정 선발 과제입니다.
+# 원티드 프리온보딩 프론트엔드 - 선발 과제
 
 ## ⭐️ 배포 링크 :  https://serene-clafoutis-081fdc.netlify.app/
 ---
