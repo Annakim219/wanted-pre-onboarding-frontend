@@ -34,6 +34,7 @@ const SignIn = () => {
     if (localStorage.getItem("Authorization")) {
       navigate("/todo");
     }
+    // eslint-disable-next-line
   }, []);
 
   const handleSubmit = async (e) => {

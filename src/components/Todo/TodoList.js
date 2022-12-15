@@ -33,6 +33,7 @@ const TodoList = () => {
 
   useEffect(() => {
     getTodos();
+    // eslint-disable-next-line
   }, [newTodo]);
 
   return (

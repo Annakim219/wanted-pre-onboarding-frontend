@@ -15,6 +15,7 @@ const Todo = ({ children }) => {
     if (!localStorage.getItem("Authorization")) {
       navigate("/");
     }
+    // eslint-disable-next-line
   }, []);
 
   return (
