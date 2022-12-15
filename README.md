@@ -7,6 +7,8 @@
 ## 배포 링크
 
 ## 데모 영상
+[![데모 영상](https://img.youtube.com/watch?v=uCs80-0psoE/0.jpg)](https://www.youtube.com/watch?v=uCs80-0psoE)
+
 
 ## 사용 기술 스택 및 라이브러리
 - Framework : React.js
