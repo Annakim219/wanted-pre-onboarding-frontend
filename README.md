@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# wanted-pre-onboarding-frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+원티드 프리온보딩 프론트엔드 과정 선발 과제입니다.
 
 ## Available Scripts
 
