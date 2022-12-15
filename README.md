@@ -6,11 +6,11 @@
 ## 배포 링크
 
 ## 사용 기술 스택 및 라이브러리
-Framework : React.js
-CSS-IN-JS : Styled Components
-REST API 요청 및 응답 : axios
-아이콘 : react-icons
-라우팅 및 리다이렉트 : react-router-dom
+- Framework : React.js
+- CSS-IN-JS : Styled Components
+- REST API 요청 및 응답 : axios
+- 아이콘 : react-icons
+- 라우팅 및 리다이렉트 : react-router-dom
 
 ## 실행 방법
 
