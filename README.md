@@ -6,6 +6,8 @@
 
 ## 배포 링크
 
+## 데모 영상
+
 ## 사용 기술 스택 및 라이브러리
 - Framework : React.js
 - CSS-IN-JS : Styled Components
