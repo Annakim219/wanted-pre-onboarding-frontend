@@ -5,8 +5,7 @@
 
 
 ## 배포 링크
-
-## 데모 영상
+##https://serene-clafoutis-081fdc.netlify.app/
 
 
 
